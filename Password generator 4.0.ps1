@@ -2,7 +2,7 @@
 Clear-Variable finalpassword -Force -ErrorAction SilentlyContinue
 Clear-Variable password -Force -ErrorAction SilentlyContinue
 $tempfile = New-TemporaryFile 
-$list=Invoke-WebRequest "https://raw.githubusercontent.com/dolph/dictionary/master/popular.txt"
+$list=Invoke-WebRequest "https://raw.githubusercontent.com/zack949/Powershell-tools/master/popular.txt"
 $list.content | Out-File $tempfile
 #$count is the number of words you want generated
 $count = 3
